@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		901FFD301F75102800B82541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD2F1F75102800B82541 /* AppDelegate.swift */; };
-		901FFD321F75102800B82541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD311F75102800B82541 /* ViewController.swift */; };
 		901FFD351F75102800B82541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901FFD331F75102800B82541 /* Main.storyboard */; };
 		901FFD371F75102800B82541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901FFD361F75102800B82541 /* Assets.xcassets */; };
-		901FFD3A1F75102800B82541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901FFD381F75102800B82541 /* LaunchScreen.storyboard */; };
 		901FFD451F75102800B82541 /* BlurredBackgroundSemiTransparentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD441F75102800B82541 /* BlurredBackgroundSemiTransparentViewTests.swift */; };
 		901FFD501F75102800B82541 /* BlurredBackgroundSemiTransparentViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD4F1F75102800B82541 /* BlurredBackgroundSemiTransparentViewUITests.swift */; };
+		901FFD5F1F75107800B82541 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD5D1F75107800B82541 /* MainViewController.swift */; };
+		901FFD601F75107800B82541 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FFD5E1F75107800B82541 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,8 @@
 /* Begin PBXFileReference section */
 		901FFD2C1F75102800B82541 /* BlurredBackgroundSemiTransparentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurredBackgroundSemiTransparentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901FFD2F1F75102800B82541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		901FFD311F75102800B82541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		901FFD341F75102800B82541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		901FFD361F75102800B82541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		901FFD391F75102800B82541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901FFD3B1F75102800B82541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		901FFD401F75102800B82541 /* BlurredBackgroundSemiTransparentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurredBackgroundSemiTransparentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901FFD441F75102800B82541 /* BlurredBackgroundSemiTransparentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundSemiTransparentViewTests.swift; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		901FFD4B1F75102800B82541 /* BlurredBackgroundSemiTransparentViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurredBackgroundSemiTransparentViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901FFD4F1F75102800B82541 /* BlurredBackgroundSemiTransparentViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundSemiTransparentViewUITests.swift; sourceTree = "<group>"; };
 		901FFD511F75102800B82541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901FFD5D1F75107800B82541 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		901FFD5E1F75107800B82541 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				901FFD2F1F75102800B82541 /* AppDelegate.swift */,
-				901FFD311F75102800B82541 /* ViewController.swift */,
+				901FFD5D1F75107800B82541 /* MainViewController.swift */,
+				901FFD5E1F75107800B82541 /* ModalViewController.swift */,
 				901FFD331F75102800B82541 /* Main.storyboard */,
 				901FFD361F75102800B82541 /* Assets.xcassets */,
-				901FFD381F75102800B82541 /* LaunchScreen.storyboard */,
 				901FFD3B1F75102800B82541 /* Info.plist */,
 			);
 			path = BlurredBackgroundSemiTransparentView;
@@ -232,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901FFD3A1F75102800B82541 /* LaunchScreen.storyboard in Resources */,
 				901FFD371F75102800B82541 /* Assets.xcassets in Resources */,
 				901FFD351F75102800B82541 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901FFD321F75102800B82541 /* ViewController.swift in Sources */,
 				901FFD301F75102800B82541 /* AppDelegate.swift in Sources */,
+				901FFD601F75107800B82541 /* ModalViewController.swift in Sources */,
+				901FFD5F1F75107800B82541 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +302,6 @@
 				901FFD341F75102800B82541 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		901FFD381F75102800B82541 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				901FFD391F75102800B82541 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -413,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlurredBackgroundSemiTransparentView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifttuts.com.BlurredBackgroundSemiTransparentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlurredBackgroundSemiTransparentView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifttuts.com.BlurredBackgroundSemiTransparentView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +499,7 @@
 				901FFD561F75102800B82541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901FFD571F75102800B82541 /* Build configuration list for PBXNativeTarget "BlurredBackgroundSemiTransparentViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +508,7 @@
 				901FFD591F75102800B82541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901FFD5A1F75102800B82541 /* Build configuration list for PBXNativeTarget "BlurredBackgroundSemiTransparentViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +517,7 @@
 				901FFD5C1F75102800B82541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
